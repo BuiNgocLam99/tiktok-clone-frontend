@@ -1,0 +1,6 @@
+Các package đã cài:
+1. tailwindcss
+2. nuxt/icon (https://nuxt.com/modules/icon)
+3. pinia
+4. pinia-plugin-persistedstate/nuxt
+5. axios
