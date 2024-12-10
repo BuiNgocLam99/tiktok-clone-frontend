@@ -8,6 +8,8 @@
             <div>
                 <SizeNavMain />
             </div>
+
+            <slot />
         </div>
     </div>
 </template>
