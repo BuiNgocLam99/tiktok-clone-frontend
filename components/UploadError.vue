@@ -28,7 +28,13 @@
 
     watch(() => errorType.value, () => {
         if (errorType.value == 'caption') {
-            error.value = 'Maximum 150 characters';
+            error.value = 'Maximum 150 characters.';
+        } else if (errorType.value == 'bio') {
+            error.value = 'Maximum 80 characters.';
+        } else if (errorType.value == 'file') {
+            error.value = 'Unsupported file. Use MP4 instead.';
+        } else {
+            error.value - '';
         }
     });
 </script>

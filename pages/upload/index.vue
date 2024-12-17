@@ -179,6 +179,15 @@
     let errors = ref(null);
     let isUploading = ref(false);
 
+    watch(() => caption.value, (caption) => {
+        if (caption.length >= 150) {
+            errorType.value = 'caption';
+            return;
+        }
+
+        errorType.value = null;
+    });
+
     const onChange = () => {
         if (fileDisplay.value) {
             URL.revokeObjectURL(fileDisplay.value);
